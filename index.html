@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Pamba Sowjanya | Developer & Data Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">PS<span class="loader-dot">.</span></div>
+            <div class="loader-bar-wrap">
+                <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+            </div>
+            <span class="loader-text" id="loaderText">Initializing...</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">PS<span class="logo-accent">.</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#certs" class="nav-link" data-section="certs">Certificates</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="theme-btn" id="themeToggle"><i class="fas fa-moon"></i></div>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-noise"></div>
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-orb orb3"></div>
+        <div class="hero-content container">
+            <div class="hero-left">
+                <div class="hero-tag slide-up">
+                    <span class="tag-pulse"></span>Available for Opportunities
+                </div>
+                <p class="hero-greeting slide-up delay-1">Hello, I'm</p>
+                <h1 class="hero-name slide-up delay-2">
+                    Pamba<br><span class="name-grad">Sowjanya</span>
+                </h1>
+                <div class="hero-role slide-up delay-3">
+                    <span class="mono-prefix">~/</span>
+                    <span id="roleText"></span><span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-bio slide-up delay-4">
+                    B.Tech CSE @ <strong>LPU</strong> &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp; ML Enthusiast &nbsp;·&nbsp; CGPA: 6.3
+                </p>
+                <div class="hero-btns slide-up delay-5">
+                    <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-ghost">Let's Talk</a>
+                    <a href="https://drive.google.com/file/d/1-CAlydfHeT8rsyVJcZkpWNy5EVnkulFz/view?usp=sharing" target="_blank" class="btn-primary" style="margin-top:10px;">Download CV <i class="fas fa-download"></i></a>
+                </div>
+                <div class="hero-socials slide-up delay-6">
+                    <a href="https://github.com/PambaSowjanya" target="_blank" class="soc-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pambasowjanya/?skipRedirect=true" target="_blank" class="soc-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:sowjanyapamba10@gmail.com" class="soc-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919347373633" class="soc-icon" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-right slide-right delay-2">
+                <div class="photo-frame">
+                    <div class="photo-ring ring1"></div>
+                    <div class="photo-ring ring2"></div>
+                    <div class="photo-container">
+                        <img src="photo.jpg" alt="Pamba Sowjanya" class="hero-photo"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                        <div class="photo-fallback"><span>PS</span></div>
+                    </div>
+                    <div class="photo-badge badge-top"><i class="fas fa-code"></i> 2+ Projects</div>
+                    <div class="photo-badge badge-bot"><i class="fas fa-certificate"></i> 3+ Certs</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="sec-header slide-up">
+                <span class="sec-tag">01 / About</span>
+                <h2 class="sec-title">Who <span class="grad-text">Am I?</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text slide-up">
+                    <p>My name is <strong>Pamba Sowjanya</strong>. I'm a Computer Science student at <strong>Lovely Professional University</strong>, passionate about building impactful web applications and exploring the intersection of data and intelligence.</p>
+                    <p>With a background spanning Android development, web technologies, and machine learning, I love tackling complex problems and turning them into clean, functional solutions.</p>
+                    <div class="about-facts">
+                        <div class="fact-item">
+                            <span class="fact-num">6.3</span>
+                            <span class="fact-label">CGPA</span>
+                        </div>
+                        <div class="fact-divider"></div>
+                        <div class="fact-item">
+                            <span class="fact-num">2+</span>
+                            <span class="fact-label">Projects</span>
+                        </div>
+                        <div class="fact-divider"></div>
+                        <div class="fact-item">
+                            <span class="fact-num">3+</span>
+                            <span class="fact-label">Certifications</span>
+                        </div>
+                        <div class="fact-divider"></div>
+                        <div class="fact-item">
+                            <span class="fact-num">1</span>
+                            <span class="fact-label">Internship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-edu slide-up delay-1">
+                    <h3 class="about-sub">Education</h3>
+                    <div class="edu-timeline">
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-body">
+                                <span class="edu-year">Aug 2023 – Present</span>
+                                <h4>B.Tech – Computer Science & Engineering</h4>
+                                <p>Lovely Professional University, Phagwara, Punjab</p>
+                                <span class="edu-grade">CGPA: 6.3</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-body">
+                                <span class="edu-year">Mar 2021 – Aug 2023</span>
+                                <h4>Intermediate – PCM</h4>
+                                <p>Venus Junior College, Ongole, Andhra Pradesh</p>
+                                <span class="edu-grade">CGPA: 7.89</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-body">
+                                <span class="edu-year">Mar 2020 – Aug 2021</span>
+                                <h4>Matriculation</h4>
+                                <p>St. John's English Medium School, Singarayakonda</p>
+                                <span class="edu-grade">CGPA: 10.0 🎉</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="sec-header slide-up">
+                <span class="sec-tag">02 / Skills</span>
+                <h2 class="sec-title">My <span class="grad-text">Toolkit</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card slide-up">
+                    <div class="skill-icon-wrap" style="--ic:#a78bfa"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card slide-up delay-1">
+                    <div class="skill-icon-wrap" style="--ic:#38bdf8"><i class="fas fa-globe"></i></div>
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span><span>CSS</span><span>React.js</span><span>Streamlit</span>
+                    </div>
+                </div>
+                <div class="skill-card slide-up delay-2">
+                    <div class="skill-icon-wrap" style="--ic:#34d399"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span><span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-card slide-up">
+                    <div class="skill-icon-wrap" style="--ic:#f472b6"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-card slide-up delay-1">
+                    <div class="skill-icon-wrap" style="--ic:#fb923c"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span><span>Excel</span><span>Jupyter</span><span>Power BI</span>
+                    </div>
+                </div>
+                <div class="skill-card slide-up delay-2">
+                    <div class="skill-icon-wrap" style="--ic:#facc15"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span>Problem Solving</span><span>Critical Thinking</span><span>Adaptability</span><span>Project Mgmt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP + PROJECTS -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="sec-header slide-up">
+                <span class="sec-tag">03 / Experience</span>
+                <h2 class="sec-title">Work & <span class="grad-text">Projects</span></h2>
+            </div>
+
+            <!-- Internship -->
+            <div class="internship-card slide-up">
+                <div class="intern-left">
+                    <span class="intern-badge">Internship</span>
+                    <h3>Android App Development Intern</h3>
+                    <p class="intern-org"><i class="fas fa-building"></i> InternsElite</p>
+                    <p class="intern-date"><i class="fas fa-calendar"></i> February 2024</p>
+                </div>
+                <div class="intern-right">
+                    <div class="intern-proj">
+                        <span class="ip-tag minor">Minor</span>
+                        <div>
+                            <h4>Chat App</h4>
+                            <p>Real-time messaging with user login and intuitive mobile UI using Android Studio.</p>
+                        </div>
+                    </div>
+                    <div class="intern-proj">
+                        <span class="ip-tag major">Major</span>
+                        <div>
+                            <h4>Calculator App</h4>
+                            <p>Core Android concepts — UI components, event handling, and activity lifecycle management.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 18px;">
+                        <a href="https://drive.google.com/file/d/1hXwP1UrqwlZHfi6lkc2w4JuwRP77ORcM/view?usp=sharing" target="_blank" class="btn-primary" style="display:inline-block;min-width:180px;text-align:center;">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="proj-grid">
+                <div class="proj-card slide-up">
+                    <div class="proj-top">
+                        <div class="proj-icon" style="--pc:#a78bfa"><i class="fas fa-chart-bar"></i></div>
+                        <div class="proj-links">
+                            <a href="https://github.com/PambaSowjanya" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <span class="proj-date">December 2025</span>
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>Interactive dashboard analyzing employee attrition, workforce distribution, and hiring trends. Featuring DAX measures, Power Query transformations, and rich visualizations.</p>
+                    <div class="proj-stack">
+                        <span>Power BI</span><span>Power Query</span><span>DAX</span>
+                    </div>
+                </div>
+                <div class="proj-card slide-up delay-1">
+                    <div class="proj-top">
+                        <div class="proj-icon" style="--pc:#38bdf8"><i class="fas fa-heart"></i></div>
+                        <div class="proj-links">
+                            <a href="https://github.com/PambaSowjanya" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <span class="proj-date">May 2025</span>
+                    <h3>Emotion-Aware Journal</h3>
+                    <p>Personalized journaling web app using NLP to detect emotions from user entries. Tracks emotional patterns over time with sentiment insights and a clean UI.</p>
+                    <div class="proj-stack">
+                        <span>Python</span><span>Streamlit</span><span>PyTorch</span><span>HuggingFace</span><span>Firebase</span>
+                    </div>
+                </div>
+                <div class="proj-card slide-up delay-2">
+                    <div class="proj-top">
+                        <div class="proj-icon" style="--pc:#34d399"><i class="fas fa-robot"></i></div>
+                        <div class="proj-links">
+                            <a href="https://www.linkedin.com/posts/pambasowjanya_proud-to-share-my-latest-data-science-ugcPost-7408185406321717248-lW2O?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEfOJKYBWrXVhL40NywZGL2mcRvDdW6kRrI" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <span class="proj-date">Achievement</span>
+                    <h3>Salary Prediction System</h3>
+                    <p>Built and published a Machine Learning salary prediction model. Showcases applied ML skills including data preprocessing, model training, and evaluation.</p>
+                    <div class="proj-stack">
+                        <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section section-alt" id="certs">
+        <div class="container">
+            <div class="sec-header slide-up">
+                <span class="sec-tag">04 / Credentials</span>
+                <h2 class="sec-title">Certificates & <span class="grad-text">Achievements</span></h2>
+            </div>
+            <div class="certs-grid">
+                <a href="https://drive.google.com/file/d/1iv9qBjICxKKoHklwkPKuH-FoWgU0EkF8/view" target="_blank" class="cert-card slide-up">
+                    <div class="cert-left">
+                        <img src="IMAGES/oracle.jpg" alt="Oracle Certificate" />
+                        <div class="cert-icon" style="--cc:#f97316"><i class="fas fa-cloud"></i></div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Oracle</span>
+                        <h4>Cloud Infrastructure 2025 AI Foundations Associate</h4>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> March 2026</span>
+                    </div>
+                    <i class="fas fa-external-link-alt cert-arrow"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1D7JEQgI7dHNEksegi-OXt6BkFH2x_Arh/view" target="_blank" class="cert-card slide-up delay-1">
+                    <div class="cert-left">
+                        <img src="IMAGES/infosys.jpg" alt="Infosys Certificate" />
+                        <div class="cert-icon" style="--cc:#a78bfa"><i class="fas fa-robot"></i></div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Infosys</span>
+                        <h4>Prompt Engineering</h4>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> August 2025</span>
+                    </div>
+                    <i class="fas fa-external-link-alt cert-arrow"></i>
+                </a>
+                <a href="https://classroom.edyoda.com/public-certificate/sowjanyapamba10/FEMD240224" target="_blank" class="cert-card slide-up delay-2">
+                    <div class="cert-left">
+                        <img src="IMAGES/edyoda.jpg" alt="Edyoda Certificate" />
+                        <div class="cert-icon" style="--cc:#38bdf8"><i class="fas fa-laptop-code"></i></div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Edyoda</span>
+                        <h4>Front End Web Development</h4>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> March 2024</span>
+                    </div>
+                    <i class="fas fa-external-link-alt cert-arrow"></i>
+                </a>
+                <a href="IMAGES/corizo.jpg" target="_blank" class="cert-card slide-up delay-3">
+                    <div class="cert-left">
+                        <img src="IMAGES/corizo.jpg" alt="Corizo Certificate" />
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Corizo</span>
+                        <h4>Data Science Internship Certificate</h4>
+                        <span class="cert-date">Dec 2023 - Jan 2024</span>
+                    </div>
+                    <i class="fas fa-external-link-alt cert-arrow"></i>
+                </a>
+            </div>
+
+            <!-- Achievements -->
+            <div class="sec-header slide-up" style="margin-top:64px">
+                <span class="sec-tag">// Highlights</span>
+                <h2 class="sec-title" style="font-size:1.8rem">Activities & <span class="grad-text">Wins</span></h2>
+            </div>
+            <div class="achieve-row">
+                <a href="https://drive.google.com/file/d/1PTKSyGkVm2QRtZxslyCjy0pt7gI--MtF/view?usp=sharing" target="_blank" class="achieve-card slide-up">
+                    <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achieve-body">
+                        <h4>HackerRank Code Hunt</h4>
+                        <p>Solved competitive programming challenges under timed conditions.</p>
+                    </div>
+                    <span class="achieve-link">View <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="https://www.linkedin.com/posts/pambasowjanya_proud-to-share-my-latest-data-science-activity-7408185407235948544-UH7u?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEfOJKYBWrXVhL40NywZGL2mcRvDdW6kRrI" target="_blank" class="achieve-card slide-up delay-1">
+                    <div class="achieve-icon" style="--ai:#38bdf8"><i class="fas fa-chart-line"></i></div>
+                    <div class="achieve-body">
+                        <h4>Salary Prediction System</h4>
+                        <p>Published a Machine Learning salary prediction model on LinkedIn.</p>
+                    </div>
+                    <span class="achieve-link">View <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="sec-header slide-up">
+                <span class="sec-tag">05 / Contact</span>
+                <h2 class="sec-title">Let's <span class="grad-text">Connect</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info slide-up">
+                    <h3>Open to Collaborations</h3>
+                    <p>I'm looking for internships and project collaborations in Full Stack Development and Machine Learning. Feel free to reach out — I'd love to work together!</p>
+                    <div class="contact-items">
+                        <a href="mailto:sowjanyapamba10@gmail.com" class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="ci-label">Email</span>
+                                <strong>sowjanyapamba10@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="tel:+919347373633" class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="ci-label">Phone</span>
+                                <strong>+91 9347373633</strong>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="ci-label">Location</span>
+                                <strong>Andhra Pradesh, India</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soc-row">
+                        <a href="https://github.com/PambaSowjanya" target="_blank" class="soc-pill"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/pambasowjanya/?skipRedirect=true" target="_blank" class="soc-pill linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-form slide-up delay-1">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="fg">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your Name" required />
+                            </div>
+                            <div class="fg">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com" required />
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Internship / Collaboration" required />
+                        </div>
+                        <div class="fg">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Hi Sowjanya! I'd like to discuss..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" id="submitBtn">
+                            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                            <span class="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+                        <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Message sent! I'll reply soon.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner container">
+            <div class="footer-logo">PS<span>.</span></div>
+            <p>Crafting code with curiosity and care.</p>
+            <div class="footer-socs">
+                <a href="https://github.com/PambaSowjanya" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pambasowjanya/?skipRedirect=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:sowjanyapamba10@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copy">© <span id="footerYear"></span> Pamba Sowjanya · Built with ♥</p>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
